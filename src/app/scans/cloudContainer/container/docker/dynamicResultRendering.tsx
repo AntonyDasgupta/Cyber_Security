@@ -76,6 +76,8 @@ const DynamicResultRendering = ({ scanningItem, outputScan, latestResult }) => {
 
     return (
         <div>
+
+
             <h1 className="flex text-lg mt-8 font-semibold text-gray-900 dark:text-white">
                 Scanned Results for{" "}
                 <p className="ms-1 font-bold">{scanningItem}</p> :-
@@ -84,7 +86,7 @@ const DynamicResultRendering = ({ scanningItem, outputScan, latestResult }) => {
             <div className="mt-3 p-6 rounded-lg shadow-lg">
                 <div className="rounded-md bg-gray-500">
                     <div className="bg-gray-100 dark:bg-[#0f172a] p-4 rounded-lg shadow-md">
-                        <h4 className="text-lg font-semibold text-gray-900 mb-4">
+                        <h4 className="text-lg font-semibold text-gray-900 mb-4 dark:text-white">
                             Information
                         </h4>
                         {outputScan && outputScan.Results?.length > 0 ? (
@@ -139,7 +141,7 @@ const DynamicResultRendering = ({ scanningItem, outputScan, latestResult }) => {
                 {severityArray && severityArray.length > 0 && (
                     <>
                         <div className="mt-6 bg-gray-100 dark:bg-[#0f172a] p-4 rounded-lg shadow-md">
-                            <h4 className="text-lg font-semibold text-gray-900 mb-4">
+                            <h4 className="text-lg font-semibold text-gray-900 mb-4 dark:text-white">
                                 Stats
                             </h4>
                             <Tabs defaultValue="tab1">
